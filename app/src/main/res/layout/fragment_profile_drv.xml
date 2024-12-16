@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Profile Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profileCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Profile Information Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Driver's Name -->
+            <TextView
+                android:id="@+id/tvDriverName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/gris_sombre"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Driver's Email -->
+            <TextView
+                android:id="@+id/tvDriverEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="driver@example.com"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/gris_sombre"
+                android:textAlignment="center"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Driver's Phone -->
+            <TextView
+                android:id="@+id/tvDriverPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+123 456 7890"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/gris_sombre"
+                android:textAlignment="center"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Driver's License -->
+            <TextView
+                android:id="@+id/tvDriverLicense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="License: D123456789"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/gris_sombre"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- QR Code Image -->
+    <ImageView
+        android:id="@+id/qrCodeView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@id/profileCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerInside"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/qrCodeView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

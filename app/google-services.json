@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "414993944666",
+    "firebase_url": "https://daba-taxi-43b44-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "daba-taxi-43b44",
+    "storage_bucket": "daba-taxi-43b44.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414993944666:android:37fd6d3836f2deee72c863",
+        "android_client_info": {
+          "package_name": "com.DabaTaxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414993944666-hmveq8erln1k4tegq8fkrkhv8bvo2449.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfAkzBpaTYVVeFcycYKic8WbJC-52t5-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414993944666-hmveq8erln1k4tegq8fkrkhv8bvo2449.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414993944666:android:99781ddacc09d72372c863",
+        "android_client_info": {
+          "package_name": "com.dabataxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414993944666-hmveq8erln1k4tegq8fkrkhv8bvo2449.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfAkzBpaTYVVeFcycYKic8WbJC-52t5-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414993944666-hmveq8erln1k4tegq8fkrkhv8bvo2449.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

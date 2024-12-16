@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Daba Taxi</string>
+    <string name="btn_fin_onBoarding">Finish</string>
+    <string name="onboarding_1_title">Welcome to the Taxi Fare Counter</string>
+    <string name="onboarding_1_description">This app tracks your journey in real-time and calculates your fare dynamically based on distance and time.</string>
+    <string name="onboarding_2_title">Track Your Driver\'s Location</string>
+    <string name="onboarding_2_description">Track your driver’s location on the map in real-time. The fare is updated as the driver moves, so you always know the cost!</string>
+    <string name="onboarding_3_title">Start Your Ride</string>
+    <string name="onboarding_3_description">Press "Start Ride" to begin your journey. The fare will be calculated as you travel based on distance and time.</string>
+    <string name="next">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="qr_scan_prompt">Scan a QR Code</string>
+
+    <string name="user_profile_not_found">User profile not found</string>
+    <string name="error_loading_profile">Error loading profile: %1$s</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="name_na">N/A</string>
+    <string name="no_trips_found">No trips found.</string>
+    <string name="trip_history">Trip History</string>
+    <string name="user_not_authenticated">User not authenticated.</string>
+    <string name="error_loading_trips">Error loading trips. Please try again later.</string>
+    <string name="no_trips_found_description">There are no trips to display.</string>
+    <string name="loading">Loading...</string>
+    <string name="user_name_na">N/A</string>
+    <string name="user_email_na">N/A</string>
+    <string name="user_phone_na">N/A</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="unable_to_navigate_edit_profile">Unable to navigate to Edit Profile.</string>
+
+
+    <string name="api_key_maps">AIzaSyALnWE7Ol61qTEP18kWlpaf52RBbpoVYqk</string>
+
+    <string name="change_image">Change Image</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="new_password">New Password</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="cancel">Cancel</string>
+    <string name="name_cannot_be_empty">Name cannot be empty.</string>
+    <string name="email_cannot_be_empty">Email cannot be empty.</string>
+    <string name="phone_cannot_be_empty">Phone number cannot be empty.</string>
+    <string name="password_length_error">Password must be at least 8 characters.</string>
+    <string name="profile_updated_successfully">Profile updated successfully.</string>
+    <string name="error_updating_profile">Error updating profile: %1$s</string>
+    <string name="failed_to_load_image">Failed to load selected image.</string>
+    <string name="select_picture">Select Picture</string>
+
+    <!-- Location Permissions -->
+    <string name="location_permission_rationale">This app requires location access to track your trip.</string>
+    <string name="location_permission_denied">Location permission was denied. Some features may not work properly.</string>
+    <string name="current_position">Current Position</string>
+    <string name="default_location">Default Location</string>
+
+    <!-- Notification Permissions -->
+    <string name="notification_permission_rationale">This app requires notification access to alert you when your trip ends.</string>
+    <string name="notification_permission_required">Notification permission is required to send trip end notifications.</string>
+    <string name="notification_permission_denied">Notification permission was denied. You won\'t receive trip end alerts.</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Trip Notifications</string>
+    <string name="notification_channel_description">Notifications related to trip status and updates.</string>
+    <string name="trip_ended">Trip Ended</string>
+
+    <!-- Trip Information -->
+    <string name="distance">Distance: %1$.2f km</string>
+    <string name="time">Time: %1$d min</string>
+    <string name="fare">Fare: %1$.2f DH</string>
+
+    <!-- Trip Buttons -->
+    <string name="start_trip">Start Trip</string>
+    <string name="end_trip">End Trip</string>
+
+    <!-- Errors and Feedback -->
+    <string name="error_qr_generation">Erreur lors de la génération du QR Code</string>
+    <string name="error_trip_end">Erreur lors de la fin de la course</string>
+    <string name="trip_cancelled">Trip Cancelled</string>
+    <string name="trip_success">Trip successfully ended.</string>
+
+    <!-- Miscellaneous -->
+    <string name="current_location">Your current location</string>
+    <string name="default_map_location">Casablanca, Morocco</string>
+    <string name="notification_icon_description">Notification Icon</string>
+
+    <string name="entry_to_app">Welcome to DabaTaxi</string>
+    <string name="btn_entry_cst">Login as Customer</string>
+    <string name="btn_entry_drv">Login as Driver</string>
+
+
+    <string name="trip_saved_successfully">Trip saved successfully!</string>
+    <string name="failed_to_save_trip">Failed to save trip</string>
+
+    <string name="invalid_trip_data">Invalid trip data. Please try again.</string>
+    <string name="unable_to_get_location">Unable to retrieve location. Please ensure your GPS is enabled.</string>
+    <string name="trip_ended_summary">Distance: %1$.2f km, Time: %2$.1f min, Fare: $%3$.2f</string>
+    <string name="qr_code_image">QR Code Image</string>
+    <string name="driver_profile_image">Driver Profile Image</string>
+    <string name="trip_saved_successfully_short">Trip saved successfully!</string>
+    <string name="trip_saved_successfully_full">Your trip has been saved successfully. Thank you for using DabaTaxi!</string>
+
+    <!-- Button Texts -->
+    <string name="start_trip_button">Start Trip</string>
+    <string name="end_trip_button">End Trip</string>
+
+    <!-- Toast Messages -->
+    <string name="trip_not_authenticated_toast">Please log in to start a trip.</string>
+    <string name="trip_saved_success_toast">Your trip has been successfully recorded.</string>
+    <string name="trip_save_failure_toast">Failed to record your trip. Please try again.</string>
+
+    <!-- Driver Information Labels -->
+    <string name="driver_name">Driver Name:</string>
+    <string name="driver_age">Age:</string>
+    <string name="driver_license">License:</string>
+
+    <!-- QR Code Related Strings -->
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="qr_code_scanned">QR Code scanned successfully.</string>
+    <string name="qr_code_scan_cancelled">QR Code scan cancelled.</string>
+
+    <!-- Default Map Settings -->
+    <string name="default_map_zoom_level">15</string>
+
+    <!-- Error Messages -->
+    <string name="generic_error">An unexpected error occurred. Please try again later.</string>
+
+    <!-- Additional Strings -->
+    <string name="fare_calculation_error">There was an error calculating the fare. Please contact support.</string>
+    <string name="trip_route_draw_error">Unable to draw trip route on the map.</string>
+    <string name="notification_permission_prompt">Enable notifications to receive trip updates and summaries.</string>
+
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/onBoarding">
+
+    <!-- Onboarding Fragment -->
+    <fragment
+        android:id="@+id/onBoarding"
+        android:name="com.dabataxi.Onboarding.OnBoarding"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding">
+        <action
+            android:id="@+id/action_onBoarding_to_home2"
+            app:destination="@id/home2"
+            app:popUpTo="@id/onBoarding"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Home Fragment (after Onboarding) -->
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.dabataxi.Auth.HomeLogin"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_login_to_customer"
+            app:destination="@id/loginHomeCST"
+            app:popUpTo="@id/home2"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_login_to_driver"
+            app:destination="@id/loginHomeDVR"
+            app:popUpTo="@id/home2"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <!-- Driver Login Home -->
+    <fragment
+        android:id="@+id/loginHomeDVR"
+        android:name="com.dabataxi.Auth.Driver.LoginHomeDrv"
+        android:label="fragment_login_home_dvr"
+        tools:layout="@layout/fragment_login_home_dvr">
+        <action
+            android:id="@+id/action_loginHomeDVR_to_signUpDrv"
+            app:destination="@id/signUpDrv"
+            app:popUpTo="@id/loginHomeDVR" />
+        <action
+            android:id="@+id/action_loginHomeDVR_to_profileDrv"
+            app:destination="@id/profileDrv"
+            app:popUpTo="@id/loginHomeDVR"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Customer Login Home -->
+    <fragment
+        android:id="@+id/loginHomeCST"
+        android:name="com.dabataxi.Auth.Customer.LoginHomeCST"
+        android:label="fragment_login_home_cst"
+        tools:layout="@layout/fragment_login_home_cst">
+        <action
+            android:id="@+id/action_loginHomeCST_to_forgetPassCst"
+            app:destination="@id/forgetPassCst"
+            app:popUpTo="@id/loginHomeCST" />
+        <action
+            android:id="@+id/action_loginHomeCST_to_homeAppCST"
+            app:destination="@id/homeAppCST"
+            app:popUpTo="@id/loginHomeCST"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginHomeCST_to_signUpCst"
+            app:destination="@id/signUpCst"
+            app:popUpTo="@id/loginHomeCST" />
+    </fragment>
+
+    <!-- Forgot Password Fragment -->
+    <fragment
+        android:id="@+id/forgetPassCst"
+        android:name="com.dabataxi.Auth.Customer.forgetPassCst"
+        android:label="fragment_forget_pass_cst"
+        tools:layout="@layout/fragment_forget_pass_cst">
+        <action
+            android:id="@+id/action_forgetPassCst_to_loginHomeCST"
+            app:destination="@id/loginHomeCST"
+            app:popUpTo="@id/forgetPassCst"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Customer Home -->
+    <fragment
+        android:id="@+id/homeAppCST"
+        android:name="com.dabataxi.Auth.Customer.HomeAppCST"
+        android:label="fragment_home_app_cst"
+        tools:layout="@layout/fragment_home_app_cst">
+        <action
+            android:id="@+id/action_homeAppCST_to_loginHomeCST"
+            app:destination="@id/loginHomeCST"
+            app:popUpTo="@id/homeAppCST"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Customer Sign Up -->
+    <fragment
+        android:id="@+id/signUpCst"
+        android:name="com.dabataxi.Auth.Customer.SignUpCst"
+        android:label="fragment_sign_up_cst"
+        tools:layout="@layout/fragment_sign_up_cst">
+        <action
+            android:id="@+id/action_signUpCst_to_loginHomeCST"
+            app:destination="@id/loginHomeCST"
+            app:popUpTo="@id/signUpCst" />
+        <action
+            android:id="@+id/action_signUpCst_to_homeAppCST"
+            app:destination="@id/homeAppCST"
+            app:popUpTo="@id/signUpCst"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Customer Profile -->
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.dabataxi.Auth.Customer.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfile" />
+        <action
+            android:id="@+id/action_profile_to_loginHomeCST"
+            app:destination="@id/loginHomeCST"
+            app:popUpTo="@id/profile"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Edit Profile Fragment -->
+    <fragment
+        android:id="@+id/editProfile"
+        android:name="com.dabataxi.Auth.Customer.EditProfile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile">
+        <action
+            android:id="@+id/action_editProfile_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+
+    <!-- Driver Sign Up -->
+    <fragment
+        android:id="@+id/signUpDrv"
+        android:name="com.dabataxi.Auth.Driver.SignUpDrv"
+        android:label="fragment_sign_up_drv"
+        tools:layout="@layout/fragment_sign_up_drv">
+        <action
+            android:id="@+id/action_signUpDrv_to_profileDrv"
+            app:destination="@id/profileDrv"
+            app:popUpTo="@id/signUpDrv"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Driver Profile -->
+    <fragment
+        android:id="@+id/profileDrv"
+        android:name="com.dabataxi.Auth.Driver.ProfileDrv"
+        android:label="fragment_profile_drv"
+        tools:layout="@layout/fragment_profile_drv" />
+</navigation>
