@@ -7,10 +7,6 @@
     tools:context=".Auth.HomeLogin"
     android:background="@color/bleu_clair">
 
-    <!-- Lottie Animation -->
-
-
-    <!-- Welcome Text -->
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/logoAnimationView"

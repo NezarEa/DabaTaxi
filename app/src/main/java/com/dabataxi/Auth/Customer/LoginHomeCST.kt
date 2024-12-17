@@ -86,17 +86,17 @@ class LoginHomeCST : Fragment() {
 
         var isValid = true
         if (email.isEmpty()) {
-            binding.tilEmail.error = "Email cannot be empty"
+            binding.tilEmail.error = getString(R.string.email_cannot_be_empty)
             isValid = false
         } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            binding.tilEmail.error = "Invalid email format"
+            binding.tilEmail.error = getString(R.string.invalid_email_format)
             isValid = false
         }
         if (password.isEmpty()) {
-            binding.tilPassword.error = "Password cannot be empty"
+            binding.tilPassword.error = getString(R.string.password_cannot_be_empty)
             isValid = false
         } else if (password.length < 8) {
-            binding.tilPassword.error = "Password must be at least 8 characters"
+            binding.tilPassword.error = getString(R.string.password_must_be_at_least_8_characters)
             isValid = false
         }
 
@@ -119,13 +119,16 @@ class LoginHomeCST : Fragment() {
     private fun handleLoginError(exception: Exception?) {
         when (exception) {
             is FirebaseAuthInvalidUserException -> {
-                Snackbar.make(requireView(), "User not found", Snackbar.LENGTH_LONG).show()
+                Snackbar.make(requireView(),
+                    getString(R.string.user_not_found), Snackbar.LENGTH_LONG).show()
             }
             is FirebaseAuthInvalidCredentialsException -> {
-                Snackbar.make(requireView(), "Invalid credentials", Snackbar.LENGTH_LONG).show()
+                Snackbar.make(requireView(),
+                    getString(R.string.invalid_credentials), Snackbar.LENGTH_LONG).show()
             }
             else -> {
-                Snackbar.make(requireView(), "Login failed. Try again.", Snackbar.LENGTH_LONG).show()
+                Snackbar.make(requireView(),
+                    getString(R.string.login_failed_try_again), Snackbar.LENGTH_LONG).show()
             }
         }
     }
@@ -157,7 +160,8 @@ class LoginHomeCST : Fragment() {
             if (account != null) {
                 firebaseAuthWithGoogle(account)
             } else {
-                Snackbar.make(requireView(), "Google sign-in failed", Snackbar.LENGTH_LONG).show()
+                Snackbar.make(requireView(),
+                    getString(R.string.google_sign_in_failed), Snackbar.LENGTH_LONG).show()
             }
         } catch (e: ApiException) {
             Log.e("GoogleSignInError", "Error code: ${e.statusCode}")

@@ -91,40 +91,40 @@ class SignUpCst : Fragment() {
         binding.tilConfirmPassword.error = null
 
         if (name.isEmpty()) {
-            binding.tilName.error = "Name is required"
+            binding.tilName.error = getString(R.string.name_is_required)
             isValid = false
         }
 
         if (email.isEmpty()) {
-            binding.tilEmail.error = "Email is required"
+            binding.tilEmail.error = getString(R.string.email_is_required)
             isValid = false
         } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            binding.tilEmail.error = "Invalid email format"
+            binding.tilEmail.error = getString(R.string.invalid_email_format)
             isValid = false
         }
 
         if (phone.isEmpty()) {
-            binding.tilPhone.error = "Phone number is required"
+            binding.tilPhone.error = getString(R.string.phone_number_is_required)
             isValid = false
         } else if (phone.length != 10) {
-            binding.tilPhone.error = "Phone number must be 10 digits"
+            binding.tilPhone.error = getString(R.string.phone_number_must_be_10_digits)
             isValid = false
         }
 
         if (password.isEmpty()) {
-            binding.tilPassword.error = "Password is required"
+            binding.tilPassword.error = getString(R.string.password_is_required)
             isValid = false
         } else if (password.length < 8) {
-            binding.tilPassword.error = "Password must be at least 8 characters"
+            binding.tilPassword.error = getString(R.string.password_must_be_at_least_8_characters)
             isValid = false
         }
 
         // Confirm password validation
         if (confirmPassword.isEmpty()) {
-            binding.tilConfirmPassword.error = "Please confirm your password"
+            binding.tilConfirmPassword.error = getString(R.string.please_confirm_your_password)
             isValid = false
         } else if (password != confirmPassword) {
-            binding.tilConfirmPassword.error = "Passwords do not match"
+            binding.tilConfirmPassword.error = getString(R.string.passwords_do_not_match)
             isValid = false
         }
 
@@ -180,21 +180,23 @@ class SignUpCst : Fragment() {
                 setUserLoggedIn(true)
 
                 // Show success message
-                Snackbar.make(requireView(), "Account created successfully", Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(requireView(),
+                    getString(R.string.account_created_successfully), Snackbar.LENGTH_SHORT).show()
 
                 // Navigate to home screen
                 findNavController().navigate(R.id.action_signUpCst_to_homeAppCST)
             } catch (e: Exception) {
                 // Show error message
-                Snackbar.make(requireView(), "Error: ${e.message}", Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(requireView(),
+                    getString(R.string.error, e.message), Snackbar.LENGTH_SHORT).show()
             }
         }
     }
 
     private fun handleSignUpError(exception: Exception?) {
         val errorMessage = when (exception) {
-            is FirebaseAuthUserCollisionException -> "This email is already registered"
-            else -> "Sign Up Failed: ${exception?.message ?: "Unknown error"}"
+            is FirebaseAuthUserCollisionException -> getString(R.string.this_email_is_already_registered)
+            else -> getString(R.string.sign_up_failed, exception?.message ?: getString(R.string.unknown_error))
         }
 
         Snackbar.make(requireView(), errorMessage, Snackbar.LENGTH_SHORT).show()

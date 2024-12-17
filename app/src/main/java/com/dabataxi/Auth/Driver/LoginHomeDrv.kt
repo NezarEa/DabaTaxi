@@ -53,12 +53,14 @@ class LoginHomeDrv : Fragment(R.layout.fragment_login_home_dvr) {
 
         // Validate inputs
         if (TextUtils.isEmpty(email)) {
-            Toast.makeText(requireContext(), "Please enter your email", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),
+                getString(R.string.please_enter_your_email), Toast.LENGTH_SHORT).show()
             return
         }
 
         if (TextUtils.isEmpty(password)) {
-            Toast.makeText(requireContext(), "Please enter your password", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),
+                getString(R.string.please_enter_your_password), Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -72,11 +74,13 @@ class LoginHomeDrv : Fragment(R.layout.fragment_login_home_dvr) {
 
                 if (task.isSuccessful) {
                     // Login success
-                    Toast.makeText(requireContext(), "Login successful", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(),
+                        getString(R.string.login_successful), Toast.LENGTH_SHORT).show()
                     navigateToDriverHome()
                 } else {
                     // Handle login failure (more informative message)
-                    Toast.makeText(requireContext(), "Login failed: ${task.exception?.localizedMessage}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(),
+                        getString(R.string.login_failed, task.exception?.localizedMessage), Toast.LENGTH_SHORT).show()
                 }
             }
     }

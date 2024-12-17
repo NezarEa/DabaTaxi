@@ -23,7 +23,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/user"
-        android:contentDescription="Profile Image"
+        android:contentDescription="@string/profile_image_edite"
         android:scaleType="centerCrop"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="16dp"
@@ -37,7 +37,7 @@
         android:id="@+id/btnChangeImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Image"
+        android:text="@string/change_image_edtprofil"
         android:textSize="14sp"
         android:backgroundTint="@color/blue"
         android:textColor="@color/white"
@@ -59,7 +59,7 @@
             android:id="@+id/edtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Full Name"
+            android:hint="@string/full_name_edtprofile"
             android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -76,7 +76,7 @@
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="@string/email_edtprofile"
             android:textSize="16sp"
             android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -94,7 +94,7 @@
             android:id="@+id/edtPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone Number"
+            android:hint="@string/phone_number_edtprofile"
             android:textSize="16sp"
             android:inputType="phone"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -112,7 +112,7 @@
             android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="New Password"
+            android:hint="@string/new_password_edtprofile"
             android:textSize="16sp"
             android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -121,7 +121,7 @@
         android:id="@+id/btnUpdateProfile"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:text="Update Profile"
+        android:text="@string/update_profile_edtprofile"
         android:backgroundTint="@color/grain"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -136,7 +136,7 @@
         android:id="@+id/btnCancel"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:text="Cancel"
+        android:text="@string/cancel_edtprofile"
         android:backgroundTint="@color/gris_clair"
         android:textColor="@color/white"
         android:textSize="16sp"

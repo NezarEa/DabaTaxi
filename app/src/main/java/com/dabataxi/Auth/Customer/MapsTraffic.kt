@@ -280,7 +280,8 @@ class MapsTraffic : Fragment(), OnMapReadyCallback, EasyPermissions.PermissionCa
 
     private fun calculateFare(distance: Double, minutes: Double): Double {
         return if (distance < 0 || minutes < 0) {
-            Toast.makeText(requireContext(), "Invalid trip data. Please try again.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),
+                getString(R.string.invalid_trip_data_please_try_again), Toast.LENGTH_SHORT).show()
             BASE_FARE
         } else {
             BASE_FARE + (distance * RATE_PER_KM) + (minutes * PER_MINUTE_RATE)
@@ -332,7 +333,7 @@ class MapsTraffic : Fragment(), OnMapReadyCallback, EasyPermissions.PermissionCa
                 requireContext(),
                 Manifest.permission.POST_NOTIFICATIONS
             ) != PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(requireContext(), "Notification permission required", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), getString(R.string.notification_permission_required), Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -475,32 +476,36 @@ class MapsTraffic : Fragment(), OnMapReadyCallback, EasyPermissions.PermissionCa
 
             userRef.get().addOnSuccessListener { documentSnapshot ->
                 if (documentSnapshot.exists()) {
-                    val driverName = documentSnapshot.getString("name") ?: "Unknown"
-                    val driverEmail = documentSnapshot.getString("email") ?: "Unknown"
-                    val driverPhone = documentSnapshot.getString("phone") ?: "Unknown"
-                    val driverLicense = documentSnapshot.getString("licenseNumber") ?: "Unknown"
+                    val driverName = documentSnapshot.getString("name") ?: getString(R.string.unknown)
+                    val driverEmail = documentSnapshot.getString("email") ?: getString(R.string.unknown)
+                    val driverPhone = documentSnapshot.getString("phone") ?: getString(R.string.unknown)
+                    val driverLicense = documentSnapshot.getString("licenseNumber") ?: getString(R.string.unknown)
 
                     // Now generate the QR code with the scanned data and driver info
                     generateQRCode(qrData, driverName, driverEmail, driverPhone, driverLicense)
                 } else {
                     // Handle case where document doesn't exist
-                    Toast.makeText(requireContext(), "Driver data not found!", Toast.LENGTH_SHORT).show()
-                    Log.e("Firestore", "Driver data not found for UID: $currentUserId")
+                    Toast.makeText(requireContext(),
+                        getString(R.string.driver_data_not_found), Toast.LENGTH_SHORT).show()
+                    Log.e(
+                        getString(R.string.firestore),
+                        getString(R.string.driver_data_not_found_for_uid, currentUserId))
                 }
             }.addOnFailureListener { exception ->
                 // Log the  exception message
-                Toast.makeText(requireContext(), "Error fetching driver data", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(),
+                    getString(R.string.error_fetching_driver_data), Toast.LENGTH_SHORT).show()
 
-                Log.e("Firestore", "Error fetching driver data", exception)
+                Log.e(getString(R.string.firestore), getString(R.string.error_fetching_driver_data), exception)
 
                 if (exception is FirebaseFirestoreException) {
-                    Log.e("FirestoreErrorCode", "Error code: ${exception.code}")
-                    Log.e("FirestoreError", "Detailed message: ${exception.message}")
+                    Log.e(getString(R.string.firestoreerrorcode), "Error code: ${exception.code}")
+                    Log.e(getString(R.string.firestoreerror), "Detailed message: ${exception.message}")
                 }
             }
         } else {
             // Handle case where user is not logged in
-            Toast.makeText(requireContext(), "User not authenticated", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), getString(R.string.user_not_authenticated), Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -586,10 +591,10 @@ class MapsTraffic : Fragment(), OnMapReadyCallback, EasyPermissions.PermissionCa
         )
         database.child("trips").child(tripId).setValue(trip)
             .addOnSuccessListener {
-                Toast.makeText(requireContext(), "Trip saved successfully!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.trip_saved_successfully), Toast.LENGTH_SHORT).show()
             }
             .addOnFailureListener { e ->
-                Toast.makeText(requireContext(), "Failed to save trip: ${e.message}", Toast.LENGTH_LONG).show()
+                Toast.makeText(requireContext(), getString(R.string.failed_to_save_trip), Toast.LENGTH_LONG).show()
             }
     }
 }

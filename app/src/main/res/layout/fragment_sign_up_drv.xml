@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/yellow"
-            android:title="Sign Up"
+            android:title="@string/sign_up"
             android:titleTextColor="#FFFFFF" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Full Name"
+                android:hint="@string/full_name"
                 app:boxStrokeColor="#4A90E2"
                 app:hintTextColor="#A9A9A9"
                 app:boxBackgroundColor="#FFFFFF">
@@ -78,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Email"
+                android:hint="@string/email"
                 app:boxStrokeColor="#4A90E2"
                 app:hintTextColor="#A9A9A9"
                 app:boxBackgroundColor="#FFFFFF">
@@ -98,7 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Phone Number"
+                android:hint="@string/phone_number"
                 app:boxStrokeColor="#4A90E2"
                 app:hintTextColor="#A9A9A9"
                 app:boxBackgroundColor="#FFFFFF">
@@ -118,7 +118,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Password"
+                android:hint="@string/password"
                 app:boxStrokeColor="#4A90E2"
                 app:hintTextColor="#A9A9A9"
                 app:boxBackgroundColor="#FFFFFF">
@@ -139,7 +139,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Confirm Password"
+                android:hint="@string/confirm_password"
                 app:boxStrokeColor="#4A90E2"
                 app:hintTextColor="#A9A9A9"
                 app:boxBackgroundColor="#FFFFFF">
@@ -158,7 +158,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Vehicle Type"
+                android:hint="@string/vehicle_type"
                 app:boxStrokeColor="#4A90E2"
                 app:hintTextColor="#A9A9A9"
                 app:boxBackgroundColor="#FFFFFF">
@@ -178,7 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="License Number"
+                android:hint="@string/license_number"
                 app:boxStrokeColor="#4A90E2"
                 app:hintTextColor="#A9A9A9"
                 app:boxBackgroundColor="#FFFFFF">
@@ -202,14 +202,14 @@
                     android:id="@+id/radioMale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Male"
+                    android:text="@string/male"
                     android:textColor="#333333" />
 
                 <RadioButton
                     android:id="@+id/radioFemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Female"
+                    android:text="@string/female"
                     android:textColor="#333333" />
             </RadioGroup>
 
@@ -219,7 +219,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/blue"
-                android:text="Upload Photo" />
+                android:text="@string/upload_photo" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCreateAccount"
@@ -227,7 +227,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/yellow"
-                android:text="Sign Up"
+                android:text="@string/sign_up"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:paddingTop="14dp"

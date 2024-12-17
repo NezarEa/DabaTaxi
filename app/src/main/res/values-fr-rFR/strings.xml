@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Daba Taxi</string>
+    <string name="btn_fin_onBoarding">Terminer</string>
+    <string name="onboarding_1_title">Bienvenue au compteur de tarifs de taxi</string>
+    <string name="onboarding_1_description">Cette application suit votre trajet en temps réel et calcule votre tarif dynamiquement en fonction de la distance et du temps.</string>
+    <string name="onboarding_2_title">Suivez l\'emplacement de votre chauffeur</string>
+    <string name="onboarding_2_description">Suivez l\'emplacement de votre chauffeur sur la carte en temps réel. Le tarif est mis à jour au fur et à mesure que le chauffeur se déplace, vous savez donc toujours le coût !</string>
+    <string name="onboarding_3_title">Commencez votre trajet</string>
+    <string name="onboarding_3_description">Appuyez sur "Démarrer le trajet" pour commencer votre voyage. Le tarif sera calculé au fur et à mesure que vous voyagez en fonction de la distance et du temps.</string>
+    <string name="next">Suivant</string>
+    <string name="qr_scan_prompt">Scanner un QR Code</string>
+    <string name="user_profile_not_found">Profil utilisateur non trouvé</string>
+    <string name="error_loading_profile">Erreur lors du chargement du profil : %1$s</string>
+    <string name="edit_profile">Modifier le profil</string>
+    <string name="logout">Se déconnecter</string>
+    <string name="name_na">N/A</string>
+    <string name="no_trips_found">Aucun trajet trouvé.</string>
+    <string name="trip_history">Historique des trajets</string>
+    <string name="user_not_authenticated">Utilisateur non authentifié.</string>
+    <string name="error_loading_trips">Erreur lors du chargement des trajets. Veuillez réessayer plus tard.</string>
+    <string name="no_trips_found_description">Il n\'y a aucun trajet à afficher.</string>
+    <string name="loading">Chargement...</string>
+    <string name="user_name_na">N/A</string>
+    <string name="user_email_na">N/A</string>
+    <string name="user_phone_na">N/A</string>
+    <string name="profile_image">Image de profil</string>
+    <string name="unable_to_navigate_edit_profile">Impossible de naviguer vers Modifier le profil.</string>
+    <string name="api_key_maps">AIzaSyALnWE7Ol61qTEP18kWlpaf52RBbpoVYqk</string>
+
+    <string name="change_image">Changer d\'image</string>
+    <string name="full_name">Nom complet</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Numéro de téléphone</string>
+    <string name="new_password">Nouveau mot de passe</string>
+    <string name="update_profile">Mettre à jour le profil</string>
+    <string name="cancel">Annuler</string>
+    <string name="name_cannot_be_empty">Le nom ne peut pas être vide.</string>
+    <string name="email_cannot_be_empty">L\'email ne peut pas être vide.</string>
+    <string name="phone_cannot_be_empty">Le numéro de téléphone ne peut pas être vide.</string>
+    <string name="password_length_error">Le mot de passe doit comporter au moins 8 caractères.</string>
+    <string name="profile_updated_successfully">Profil mis à jour avec succès.</string>
+    <string name="error_updating_profile">Erreur de mise à jour du profil : %1$s</string>
+    <string name="failed_to_load_image">Échec du chargement de l\'image sélectionnée.</string>
+    <string name="select_picture">Sélectionner une photo</string>
+
+    <!-- Location Permissions -->
+    <string name="location_permission_rationale">Cette application nécessite l\'accès à la localisation pour suivre votre trajet.</string>
+    <string name="location_permission_denied">L\'autorisation de localisation a été refusée. Certaines fonctionnalités peuvent ne pas fonctionner correctement.</string>
+    <string name="current_position">Position actuelle</string>
+    <string name="default_location">Emplacement par défaut</string>
+
+    <!-- Notification Permissions -->
+    <string name="notification_permission_rationale">Cette application nécessite l\'accès aux notifications pour vous alerter lorsque votre trajet se termine.</string>
+    <string name="notification_permission_required">L\'autorisation de notification est requise pour envoyer des notifications de fin de trajet.</string>
+    <string name="notification_permission_denied">L\'autorisation de notification a été refusée. Vous ne recevrez pas d\'alertes de fin de trajet.</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Notifications de trajet</string>
+    <string name="notification_channel_description">Notifications liées au statut et aux mises à jour du trajet.</string>
+    <string name="trip_ended">Trajet terminé</string>
+
+    <!-- Trip Information -->
+    <string name="distance">Distance : %1$.2f km</string>
+    <string name="time">Temps : %1$d min</string>
+    <string name="fare">Tarif : %1$.2f DH</string>
+
+    <!-- Trip Buttons -->
+    <string name="start_trip">Démarrer le trajet</string>
+    <string name="end_trip">Terminer le trajet</string>
+
+    <!-- Errors and Feedback -->
+    <string name="error_qr_generation">Erreur lors de la génération du QR Code</string>
+    <string name="error_trip_end">Erreur lors de la fin de la course</string>
+    <string name="trip_cancelled">Trajet annulé</string>
+    <string name="trip_success">Trajet terminé avec succès.</string>
+
+    <!-- Miscellaneous -->
+    <string name="current_location">Votre position actuelle</string>
+    <string name="default_map_location">Casablanca, Maroc</string>
+    <string name="notification_icon_description">Icône de notification</string>
+
+    <string name="entry_to_app">Bienvenue dans DabaTaxi</string>
+    <string name="btn_entry_cst">Se connecter en tant que client</string>
+    <string name="btn_entry_drv">Se connecter en tant que chauffeur</string>
+
+    <string name="trip_saved_successfully">Trajet enregistré avec succès !</string>
+    <string name="failed_to_save_trip">Échec de l\'enregistrement du trajet</string>
+
+    <string name="invalid_trip_data">Données de trajet invalides. Veuillez réessayer.</string>
+    <string name="unable_to_get_location">Impossible de récupérer la position. Veuillez vous assurer que votre GPS est activé.</string>
+    <string name="trip_ended_summary">Distance : %1$.2f km, Temps : %2$.1f min, Tarif : $%3$.2f</string>
+    <string name="qr_code_image">Image du code QR</string>
+    <string name="driver_profile_image">Image du profil du chauffeur</string>
+    <string name="trip_saved_successfully_short">Trajet enregistré avec succès !</string>
+    <string name="trip_saved_successfully_full">Votre trajet a été enregistré avec succès. Merci d\'utiliser DabaTaxi !</string>
+
+    <!-- Button Texts -->
+    <string name="start_trip_button">Démarrer le trajet</string>
+    <string name="end_trip_button">Terminer le trajet</string>
+
+    <!-- Toast Messages -->
+    <string name="trip_not_authenticated_toast">Veuillez vous connecter pour démarrer un trajet.</string>
+    <string name="trip_saved_success_toast">Votre trajet a été enregistré avec succès.</string>
+    <string name="trip_save_failure_toast">Échec de l\'enregistrement de votre trajet. Veuillez réessayer.</string>
+
+    <!-- Driver Information Labels -->
+    <string name="driver_name">Nom du chauffeur :</string>
+    <string name="driver_age">Âge :</string>
+    <string name="driver_license">Licence :</string>
+
+    <!-- QR Code Related Strings -->
+    <string name="scan_qr_code">Scanner le code QR</string>
+    <string name="qr_code_scanned">Code QR scanné avec succès.</string>
+    <string name="qr_code_scan_cancelled">Scan du code QR annulé.</string>
+
+    <!-- Default Map Settings -->
+    <string name="default_map_zoom_level">15</string>
+
+    <!-- Error Messages -->
+    <string name="generic_error">Une erreur inattendue est survenue. Veuillez réessayer plus tard.</string>
+
+    <!-- Additional Strings -->
+    <string name="fare_calculation_error">Une erreur est survenue lors du calcul du tarif. Veuillez contacter le support.</string>
+    <string name="trip_route_draw_error">Impossible de dessiner l\'itinéraire du trajet sur la carte.</string>
+    <string name="notification_permission_prompt">Activez les notifications pour recevoir des mises à jour et des résumés de trajet.</string>
+    <string name="profile_image_edite">Image de profil</string>
+    <string name="change_image_edtprofil">Changer d\'image</string>
+    <string name="full_name_edtprofile">Nom complet</string>
+    <string name="email_edtprofile">Email</string>
+    <string name="phone_number_edtprofile">Numéro de téléphone</string>
+    <string name="new_password_edtprofile">Nouveau mot de passe</string>
+    <string name="update_profile_edtprofile">Mettre à jour le profil</string>
+    <string name="cancel_edtprofile">Annuler</string>
+    <string name="forgot_password">Mot de passe oublié</string>
+    <string name="submit">Soumettre</string>
+    <string name="password">Mot de passe</string>
+    <string name="login">Se connecter</string>
+    <string name="forgot_password_qs">Mot de passe oublié ?</string>
+    <string name="login_with_google">Se connecter avec Google</string>
+    <string name="don_t_have_an_account">Vous n\'avez pas de compte ?</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="trip_details">Détails du trajet</string>
+    <string name="distance_0_0_km">Distance : 0.0 km</string>
+    <string name="time_0_min">Temps : 0 min</string>
+    <string name="fare_0_0_dh">Tarif : 0.0 DH</string>
+    <string name="user_name">Nom d\'utilisateur</string>
+    <string name="user_example_com">user@example.com</string>
+    <string name="_1_234_567_890">+1 234 567 890</string>
+    <string name="john_doe">John Doe</string>
+    <string name="driver_example_com">driver@example.com</string>
+    <string name="_123_456_7890">+123 456 7890</string>
+    <string name="license_d123456789">Licence : D123456789</string>
+    <string name="sign_up">S\'inscrire</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="male">Homme</string>
+    <string name="female">Femme</string>
+    <string name="vehicle_type">Type de véhicule</string>
+    <string name="license_number">Numéro de licence</string>
+    <string name="upload_photo">Télécharger la photo</string>
+    <string name="fare_25_50">Tarif : 25,50 $</string>
+    <string name="start_time_01_01_2023_10_00">Heure de début : 01/01/2023 10:00</string>
+    <string name="end_time_01_01_2023_10_30">Heure de fin : 01/01/2023 10:30</string>
+    <string name="historique">Historique</string>
+    <string name="map">Carte</string>
+    <string name="profil">Profil</string>
+    <string name="re_authentication_failed_please_try_again">Échec de la ré-authentification. Veuillez réessayer.</string>
+    <string name="image_upload_failed">Échec du téléchargement de l\'image : %1$s</string>
+    <string name="unknown_error">Erreur inconnue</string>
+    <string name="password_updated_successfully">Mot de passe mis à jour avec succès</string>
+    <string name="error_updating_password">Erreur lors de la mise à jour du mot de passe : %1$s</string>
+    <string name="invalid_email_format">Format d\'email invalide</string>
+    <string name="password_cannot_be_empty">Le mot de passe ne peut pas être vide</string>
+    <string name="password_must_be_at_least_8_characters">Le mot de passe doit comporter au moins 8 caractères</string>
+    <string name="user_not_found">Utilisateur non trouvé</string>
+    <string name="invalid_credentials">Identifiants invalides</string>
+    <string name="login_failed_try_again">Échec de la connexion. Veuillez réessayer.</string>
+    <string name="google_sign_in_failed">Échec de la connexion avec Google</string>
+    <string name="unknown">Inconnu</string>
+    <string name="driver_data_not_found">Données du chauffeur non trouvées !</string>
+    <string name="driver_data_not_found_for_uid">Données du chauffeur non trouvées pour l\'UID : %1$s</string>
+    <string name="firestore">Firestore</string>
+    <string name="error_fetching_driver_data">Erreur lors de la récupération des données du chauffeur</string>
+    <string name="firestoreerrorcode">FirestoreErrorCode</string>
+    <string name="firestoreerror">FirestoreError</string>
+    <string name="invalid_trip_data_please_try_again">Données de trajet invalides. Veuillez réessayer.</string>
+    <string name="account_created_successfully">Compte créé avec succès</string>
+    <string name="error">Erreur : %1$s</string>
+    <string name="this_email_is_already_registered">Cet email est déjà enregistré</string>
+    <string name="sign_up_failed">Échec de l\'inscription : %1$s</string>
+    <string name="passwords_do_not_match">Les mots de passe ne correspondent pas</string>
+    <string name="please_confirm_your_password">Veuillez confirmer votre mot de passe</string>
+    <string name="password_is_required">Le mot de passe est requis</string>
+    <string name="phone_number_must_be_10_digits">Le numéro de téléphone doit comporter 10 chiffres</string>
+    <string name="phone_number_is_required">Le numéro de téléphone est requis</string>
+    <string name="email_is_required">L\'email est requis</string>
+    <string name="name_is_required">Le nom est requis</string>
+    <string name="please_enter_your_email">Veuillez entrer votre email</string>
+    <string name="please_enter_your_password">Veuillez entrer votre mot de passe</string>
+    <string name="login_successful">Connexion réussie</string>
+    <string name="login_failed">Échec de la connexion : %1$s</string>
+    <string name="logged_out_successfully">Déconnexion réussie</string>
+    <string name="all_fields_are_required">Tous les champs sont requis !</string>
+    <string name="password_must_be_at_least_6_characters_long">Le mot de passe doit comporter au moins 6 caractères</string>
+    <string name="driver_sign_up_successful">Inscription du chauffeur réussie !</string>
+    <string name="error_saving_driver_data">Erreur lors de l\'enregistrement des données du chauffeur : %1$s</string>
+</resources>

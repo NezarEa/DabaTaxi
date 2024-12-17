@@ -42,7 +42,7 @@
                 android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/text_primary"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -59,7 +59,7 @@
                 android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:textColor="@color/text_primary"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -69,7 +69,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="@string/login"
             android:layout_marginBottom="16dp"
             app:backgroundTint="@color/primary"/>
 
@@ -78,7 +78,7 @@
             android:id="@+id/btnForgotPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Forgot Password?"
+            android:text="@string/forgot_password_qs"
             android:gravity="center"
             android:textColor="@color/primary"
             android:padding="8dp"
@@ -89,7 +89,7 @@
             android:id="@+id/btnGoogleLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login with Google"
+            android:text="@string/login_with_google"
             android:layout_marginBottom="8dp"
             app:icon="@drawable/ic_google"
             app:iconGravity="textStart"
@@ -107,13 +107,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account? "
+                android:text="@string/don_t_have_an_account"
                 android:textColor="@color/text_secondary"/>
             <TextView
                 android:id="@+id/btnCreateAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Create Account"
+                android:text="@string/create_account"
                 android:textColor="@color/primary"
                 android:textStyle="bold"
                 android:clickable="true"

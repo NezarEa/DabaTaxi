@@ -8,11 +8,7 @@
     <string name="onboarding_3_title">Start Your Ride</string>
     <string name="onboarding_3_description">Press "Start Ride" to begin your journey. The fare will be calculated as you travel based on distance and time.</string>
     <string name="next">Next</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="qr_scan_prompt">Scan a QR Code</string>
-
     <string name="user_profile_not_found">User profile not found</string>
     <string name="error_loading_profile">Error loading profile: %1$s</string>
     <string name="edit_profile">Edit Profile</string>
@@ -29,8 +25,6 @@
     <string name="user_phone_na">N/A</string>
     <string name="profile_image">Profile Image</string>
     <string name="unable_to_navigate_edit_profile">Unable to navigate to Edit Profile.</string>
-
-
     <string name="api_key_maps">AIzaSyALnWE7Ol61qTEP18kWlpaf52RBbpoVYqk</string>
 
     <string name="change_image">Change Image</string>
@@ -130,5 +124,85 @@
     <string name="fare_calculation_error">There was an error calculating the fare. Please contact support.</string>
     <string name="trip_route_draw_error">Unable to draw trip route on the map.</string>
     <string name="notification_permission_prompt">Enable notifications to receive trip updates and summaries.</string>
+    <string name="profile_image_edite">Profile Image</string>
+    <string name="change_image_edtprofil">Change Image</string>
+    <string name="full_name_edtprofile">Full Name</string>
+    <string name="email_edtprofile">Email</string>
+    <string name="phone_number_edtprofile">Phone Number</string>
+    <string name="new_password_edtprofile">New Password</string>
+    <string name="update_profile_edtprofile">Update Profile</string>
+    <string name="cancel_edtprofile">Cancel</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="submit">Submit</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password_qs">Forgot Password?</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="create_account">Create Account</string>
+    <string name="trip_details">Trip Details</string>
+    <string name="distance_0_0_km">Distance: 0.0 km</string>
+    <string name="time_0_min">Time: 0 min</string>
+    <string name="fare_0_0_dh">Fare: 0.0 DH</string>
+    <string name="user_name">User Name</string>
+    <string name="user_example_com">user@example.com</string>
+    <string name="_1_234_567_890">+1 234 567 890</string>
+    <string name="john_doe">John Doe</string>
+    <string name="driver_example_com">driver@example.com</string>
+    <string name="_123_456_7890">+123 456 7890</string>
+    <string name="license_d123456789">License: D123456789</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="license_number">License Number</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="fare_25_50">Fare: $25.50</string>
+    <string name="start_time_01_01_2023_10_00">Start Time: 01/01/2023 10:00</string>
+    <string name="end_time_01_01_2023_10_30">End Time: 01/01/2023 10:30</string>
+    <string name="historique">Historique</string>
+    <string name="map">Map</string>
+    <string name="profil">Profil</string>
+    <string name="re_authentication_failed_please_try_again">Re-authentication failed. Please try again.</string>
+    <string name="image_upload_failed">Image upload failed: %1$s</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="password_updated_successfully">Password updated successfully</string>
+    <string name="error_updating_password">Error updating password: %1$s</string>
+    <string name="invalid_email_format">Invalid email format</string>
+    <string name="password_cannot_be_empty">Password cannot be empty</string>
+    <string name="password_must_be_at_least_8_characters">Password must be at least 8 characters</string>
+    <string name="user_not_found">User not found</string>
+    <string name="invalid_credentials">Invalid credentials</string>
+    <string name="login_failed_try_again">Login failed. Try again.</string>
+    <string name="google_sign_in_failed">Google sign-in failed</string>
+    <string name="unknown">Unknown</string>
+    <string name="driver_data_not_found">Driver data not found!</string>
+    <string name="driver_data_not_found_for_uid">Driver data not found for UID: %1$s</string>
+    <string name="firestore">Firestore</string>
+    <string name="error_fetching_driver_data">Error fetching driver data</string>
+    <string name="firestoreerrorcode">FirestoreErrorCode</string>
+    <string name="firestoreerror">FirestoreError</string>
+    <string name="invalid_trip_data_please_try_again">Invalid trip data. Please try again.</string>
+    <string name="account_created_successfully">Account created successfully</string>
+    <string name="error">Error: %1$s</string>
+    <string name="this_email_is_already_registered">This email is already registered</string>
+    <string name="sign_up_failed">Sign Up Failed: %1$s</string>
+    <string name="passwords_do_not_match">Passwords do not match</string>
+    <string name="please_confirm_your_password">Please confirm your password</string>
+    <string name="password_is_required">Password is required</string>
+    <string name="phone_number_must_be_10_digits">Phone number must be 10 digits</string>
+    <string name="phone_number_is_required">Phone number is required</string>
+    <string name="email_is_required">Email is required</string>
+    <string name="name_is_required">Name is required</string>
+    <string name="please_enter_your_email">Please enter your email</string>
+    <string name="please_enter_your_password">Please enter your password</string>
+    <string name="login_successful">Login successful</string>
+    <string name="login_failed">Login failed: %1$s</string>
+    <string name="logged_out_successfully">Logged out successfully</string>
+    <string name="all_fields_are_required">All fields are required!</string>
+    <string name="password_must_be_at_least_6_characters_long">Password must be at least 6 characters long</string>
+    <string name="driver_sign_up_successful">Driver Sign-up Successful!</string>
+    <string name="error_saving_driver_data">Error saving driver data: %1$s</string>
 
 </resources>

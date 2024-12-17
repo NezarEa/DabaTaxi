@@ -19,7 +19,7 @@
             android:id="@+id/tvFare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fare: $25.50"
+            android:text="@string/fare_25_50"
             android:textSize="14sp" />
 
         <!-- Start Time -->
@@ -27,7 +27,7 @@
             android:id="@+id/tvStartTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Start Time: 01/01/2023 10:00"
+            android:text="@string/start_time_01_01_2023_10_00"
             android:textSize="14sp" />
 
         <!-- End Time -->
@@ -35,7 +35,7 @@
             android:id="@+id/tvEndTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="End Time: 01/01/2023 10:30"
+            android:text="@string/end_time_01_01_2023_10_30"
             android:textSize="14sp" />
 
     </LinearLayout>

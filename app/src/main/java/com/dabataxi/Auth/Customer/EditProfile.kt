@@ -142,7 +142,7 @@ class EditProfile : Fragment(R.layout.fragment_edit_profile) {
     private fun chooseImage() {
         val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.type = "image/*"
-        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST)
+        startActivityForResult(Intent.createChooser(intent, getString(R.string.select_picture)), PICK_IMAGE_REQUEST)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -170,7 +170,8 @@ class EditProfile : Fragment(R.layout.fragment_edit_profile) {
                 if (task.isSuccessful) {
                     onSuccess() // Proceed with profile update
                 } else {
-                    Snackbar.make(requireView(), "Re-authentication failed. Please try again.", Snackbar.LENGTH_LONG).show()
+                    Snackbar.make(requireView(),
+                        getString(R.string.re_authentication_failed_please_try_again), Snackbar.LENGTH_LONG).show()
                 }
             }
     }
@@ -207,12 +208,13 @@ class EditProfile : Fragment(R.layout.fragment_edit_profile) {
                             saveProfileToDatabase(userRef, updatedData, password)
                         }
                     }.addOnFailureListener {
-                        Snackbar.make(requireView(), "Image upload failed: ${it.message}", Snackbar.LENGTH_LONG).show()
+                        Snackbar.make(requireView(),
+                            getString(R.string.image_upload_failed, it.message), Snackbar.LENGTH_LONG).show()
                     }
                 }
             } ?: saveProfileToDatabase(userRef, updatedData, password) // If no image selected, save without image
         } else {
-            Snackbar.make(requireView(), "User not authenticated", Snackbar.LENGTH_LONG).show()
+            Snackbar.make(requireView(), getString(R.string.user_not_authenticated), Snackbar.LENGTH_LONG).show()
         }
     }
 
@@ -223,13 +225,13 @@ class EditProfile : Fragment(R.layout.fragment_edit_profile) {
                 if (password != null) {
                     updatePassword(password)
                 } else {
-                    Snackbar.make(requireView(), "Profile updated successfully", Snackbar.LENGTH_LONG).show()
+                    Snackbar.make(requireView(), getString(R.string.profile_updated_successfully), Snackbar.LENGTH_LONG).show()
                     findNavController().navigate(R.id.action_editProfile_to_profile)
                 }
             } else {
                 // More detailed error handling
-                val errorMessage = task.exception?.message ?: "Unknown error"
-                Snackbar.make(requireView(), "Error updating profile: $errorMessage", Snackbar.LENGTH_LONG).show()
+                val errorMessage = task.exception?.message ?: getString(R.string.unknown_error)
+                Snackbar.make(requireView(), getString(R.string.error_updating_profile,errorMessage), Snackbar.LENGTH_LONG).show()
             }
         }
     }
@@ -238,10 +240,12 @@ class EditProfile : Fragment(R.layout.fragment_edit_profile) {
         val user = FirebaseAuth.getInstance().currentUser
         user?.updatePassword(password)?.addOnCompleteListener { task ->
             if (task.isSuccessful) {
-                Snackbar.make(requireView(), "Password updated successfully", Snackbar.LENGTH_LONG).show()
+                Snackbar.make(requireView(),
+                    getString(R.string.password_updated_successfully), Snackbar.LENGTH_LONG).show()
                 findNavController().navigate(R.id.action_editProfile_to_profile)
             } else {
-                Snackbar.make(requireView(), "Error updating password: ${task.exception?.message}", Snackbar.LENGTH_LONG).show()
+                Snackbar.make(requireView(),
+                    getString(R.string.error_updating_password, task.exception?.message), Snackbar.LENGTH_LONG).show()
             }
         }
     }

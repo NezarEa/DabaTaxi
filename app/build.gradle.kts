@@ -55,8 +55,8 @@ android {
 }
 
 dependencies {
-    implementation ("androidx.appcompat:appcompat:1.7.0")
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation("androidx.databinding:databinding-runtime:8.7.3")
     implementation("com.github.qamarelsafadi:CurvedBottomNavigation:0.1.3")
     implementation("pub.devrel:easypermissions:3.0.0")

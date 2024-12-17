@@ -2,6 +2,7 @@ package com.dabataxi
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.animation.ObjectAnimator
@@ -22,12 +23,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var splashScreen: androidx.core.splashscreen.SplashScreen
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        splashScreen = installSplashScreen()  // Initialize the splash screen
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()  // Enables edge-to-edge support (making use of the whole screen)
-        setContentView(R.layout.activity_main)  // Set the activity's layout
+        splashScreen = installSplashScreen()
+        enableEdgeToEdge()
 
-        // Apply window insets to adjust padding according to system bars
+        setContentView(R.layout.activity_main)
+
         val mainView = findViewById<View>(R.id.nav_host_fragment)
         ViewCompat.setOnApplyWindowInsetsListener(mainView) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -35,12 +36,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Set up the NavController with the NavHostFragment
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
 
-        // Set up the exit animation for the splash screen
         splashScreen.setOnExitAnimationListener { splashScreenViewProvider ->
             val slideUp = ObjectAnimator.ofFloat(
                 splashScreenViewProvider.view,
@@ -49,46 +48,48 @@ class MainActivity : AppCompatActivity() {
                 -splashScreenViewProvider.view.height.toFloat()
             ).apply {
                 interpolator = AccelerateDecelerateInterpolator()
-                duration = 1000L  // Slide-up animation duration
+                duration = 1000L
                 doOnEnd {
-                    splashScreenViewProvider.remove()  // Remove splash screen after the animation
+                    splashScreenViewProvider.remove()
                 }
             }
-            slideUp.start()  // Start the animation
+            slideUp.start()
         }
 
-        // Check user login status and navigate accordingly
+        // After splash screen, navigate to the appropriate screen
         navigateToAppropriateScreen()
     }
 
-    // Navigate to the appropriate screen based on user authentication and onboarding status
     private fun navigateToAppropriateScreen() {
         val currentUser = FirebaseAuth.getInstance().currentUser
-        if (currentUser != null) {
-            // User is logged in
-            if (onBoardingIsFinished()) {
-                navigateToHome()  // Navigate to the home screen if onboarding is finished
-            } else {
-                navigateToOnBoarding()  // Otherwise, show the onboarding screen
+        val isOnboardingFinished = onBoardingIsFinished()
+
+        Log.d("MainActivity", "User: $currentUser, Onboarding Finished: $isOnboardingFinished")
+
+        when {
+            currentUser != null && isOnboardingFinished -> {
+                navigateToHome()
             }
-        } else {
-            navController.navigate(R.id.home2)
+            currentUser != null -> {
+                navigateToOnBoarding()
+            }
+            else -> {
+                navController.navigate(R.id.home2)
+            }
         }
     }
 
-    // Navigate to the home screen (customer's home)
     private fun navigateToHome() {
-        navController.navigate(R.id.homeAppCST)  // Navigate to customer home
+        navController.navigate(R.id.homeAppCST)
     }
 
-    // Navigate to the onboarding screen
     private fun navigateToOnBoarding() {
-        navController.navigate(R.id.onBoarding)  // Navigate to onboarding screen
+        navController.navigate(R.id.onBoarding)
     }
-
-    // Check if the onboarding process has been finished
     private fun onBoardingIsFinished(): Boolean {
         val sharedPreferences = getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
-        return sharedPreferences.getBoolean("finished", false)  // Return true if finished, false otherwise
+        val isFinished = sharedPreferences.getBoolean("finished", false)
+        Log.d("MainActivity", "Onboarding finished: $isFinished")
+        return isFinished
     }
 }

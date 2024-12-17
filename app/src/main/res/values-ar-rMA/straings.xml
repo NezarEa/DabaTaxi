@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">دابا تاكسي</string>
+    <string name="btn_fin_onBoarding">إنهاء</string>
+    <string name="onboarding_1_title">مرحبًا بك في عداد أجرة التاكسي</string>
+    <string name="onboarding_1_description">هذا التطبيق يتتبع رحلتك في الوقت الفعلي ويحسب أجرتك ديناميكيًا بناءً على المسافة والوقت.</string>
+    <string name="onboarding_2_title">تتبع موقع السائق</string>
+    <string name="onboarding_2_description">تتبع موقع السائق على الخريطة في الوقت الفعلي. يتم تحديث الأجرة مع تحرك السائق، لذا أنت دائمًا تعرف التكلفة!</string>
+    <string name="onboarding_3_title">ابدأ رحلتك</string>
+    <string name="onboarding_3_description">اضغط "ابدأ الرحلة" لبدء رحلتك. سيتم حساب الأجرة أثناء السفر بناءً على المسافة والوقت.</string>
+    <string name="next">التالي</string>
+    <string name="qr_scan_prompt">امسح رمز الاستجابة السريعة</string>
+    <string name="user_profile_not_found">لم يتم العثور على ملف المستخدم</string>
+    <string name="error_loading_profile">حدث خطأ أثناء تحميل الملف الشخصي: %1$s</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="name_na">غير متاح</string>
+    <string name="no_trips_found">لا توجد رحلات.</string>
+    <string name="trip_history">سجل الرحلات</string>
+    <string name="user_not_authenticated">لم يتم التحقق من المستخدم.</string>
+    <string name="error_loading_trips">حدث خطأ أثناء تحميل الرحلات. يرجى المحاولة لاحقًا.</string>
+    <string name="no_trips_found_description">لا توجد رحلات لعرضها.</string>
+    <string name="loading">جارٍ التحميل...</string>
+    <string name="user_name_na">غير متاح</string>
+    <string name="user_email_na">غير متاح</string>
+    <string name="user_phone_na">غير متاح</string>
+    <string name="profile_image">صورة الملف الشخصي</string>
+    <string name="unable_to_navigate_edit_profile">غير قادر على الانتقال إلى تعديل الملف الشخصي.</string>
+    <string name="api_key_maps">AIzaSyALnWE7Ol61qTEP18kWlpaf52RBbpoVYqk</string>
+
+    <string name="change_image">تغيير الصورة</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="update_profile">تحديث الملف الشخصي</string>
+    <string name="cancel">إلغاء</string>
+    <string name="name_cannot_be_empty">لا يمكن أن يكون الاسم فارغًا.</string>
+    <string name="email_cannot_be_empty">لا يمكن أن يكون البريد الإلكتروني فارغًا.</string>
+    <string name="phone_cannot_be_empty">لا يمكن أن يكون رقم الهاتف فارغًا.</string>
+    <string name="password_length_error">يجب أن تتكون كلمة المرور من 8 أحرف على الأقل.</string>
+    <string name="profile_updated_successfully">تم تحديث الملف الشخصي بنجاح.</string>
+    <string name="error_updating_profile">حدث خطأ أثناء تحديث الملف الشخصي: %1$s</string>
+    <string name="failed_to_load_image">فشل في تحميل الصورة المحددة.</string>
+    <string name="select_picture">اختيار صورة</string>
+
+    <!-- Location Permissions -->
+    <string name="location_permission_rationale">يتطلب هذا التطبيق الوصول إلى الموقع لتتبع رحلتك.</string>
+    <string name="location_permission_denied">تم رفض إذن الموقع. قد لا تعمل بعض الميزات بشكل صحيح.</string>
+    <string name="current_position">الموقع الحالي</string>
+    <string name="default_location">الموقع الافتراضي</string>
+
+    <!-- Notification Permissions -->
+    <string name="notification_permission_rationale">يتطلب هذا التطبيق الوصول إلى الإشعارات لتنبيهك عند انتهاء رحلتك.</string>
+    <string name="notification_permission_required">إذن الإشعارات مطلوب لإرسال إشعارات انتهاء الرحلة.</string>
+    <string name="notification_permission_denied">تم رفض إذن الإشعارات. لن تتلقى إشعارات انتهاء الرحلة.</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">إشعارات الرحلة</string>
+    <string name="notification_channel_description">الإشعارات المتعلقة بحالة الرحلة والتحديثات.</string>
+    <string name="trip_ended">انتهت الرحلة</string>
+
+    <!-- Trip Information -->
+    <string name="distance">المسافة: %1$.2f كم</string>
+    <string name="time">الوقت: %1$d دقيقة</string>
+    <string name="fare">الأجرة: %1$.2f درهم</string>
+
+    <!-- Trip Buttons -->
+    <string name="start_trip">ابدأ الرحلة</string>
+    <string name="end_trip">انتهاء الرحلة</string>
+
+    <!-- Errors and Feedback -->
+    <string name="error_qr_generation">خطأ أثناء توليد رمز الاستجابة السريعة</string>
+    <string name="error_trip_end">خطأ أثناء إنهاء الرحلة</string>
+    <string name="trip_cancelled">تم إلغاء الرحلة</string>
+    <string name="trip_success">تم إنهاء الرحلة بنجاح.</string>
+
+    <!-- Miscellaneous -->
+    <string name="current_location">موقعك الحالي</string>
+    <string name="default_map_location">الدار البيضاء، المغرب</string>
+    <string name="notification_icon_description">رمز الإشعار</string>
+
+    <string name="entry_to_app">مرحبًا بك في دابا تاكسي</string>
+    <string name="btn_entry_cst">تسجيل الدخول كعميل</string>
+    <string name="btn_entry_drv">تسجيل الدخول كسائق</string>
+
+    <string name="trip_saved_successfully">تم حفظ الرحلة بنجاح!</string>
+    <string name="failed_to_save_trip">فشل في حفظ الرحلة</string>
+
+    <string name="invalid_trip_data">بيانات الرحلة غير صالحة. يرجى المحاولة مرة أخرى.</string>
+    <string name="unable_to_get_location">غير قادر على استرجاع الموقع. يرجى التأكد من تمكين GPS.</string>
+    <string name="trip_ended_summary">المسافة: %1$.2f كم، الوقت: %2$.1f دقيقة، الأجرة: %3$.2f دولار</string>
+    <string name="qr_code_image">صورة رمز الاستجابة السريعة</string>
+    <string name="driver_profile_image">صورة ملف السائق</string>
+    <string name="trip_saved_successfully_short">تم حفظ الرحلة بنجاح!</string>
+    <string name="trip_saved_successfully_full">تم حفظ رحلتك بنجاح. شكرًا لاستخدامك دابا تاكسي!</string>
+
+    <!-- Button Texts -->
+    <string name="start_trip_button">ابدأ الرحلة</string>
+    <string name="end_trip_button">انتهاء الرحلة</string>
+
+    <!-- Toast Messages -->
+    <string name="trip_not_authenticated_toast">يرجى تسجيل الدخول لبدء الرحلة.</string>
+    <string name="trip_saved_success_toast">تم تسجيل رحلتك بنجاح.</string>
+    <string name="trip_save_failure_toast">فشل في تسجيل رحلتك. يرجى المحاولة مرة أخرى.</string>
+
+    <!-- Driver Information Labels -->
+    <string name="driver_name">اسم السائق:</string>
+    <string name="driver_age">العمر:</string>
+    <string name="driver_license">الرخصة:</string>
+
+    <!-- QR Code Related Strings -->
+    <string name="scan_qr_code">مسح رمز الاستجابة السريعة</string>
+    <string name="qr_code_scanned">تم مسح رمز الاستجابة السريعة بنجاح.</string>
+    <string name="qr_code_scan_cancelled">تم إلغاء مسح رمز الاستجابة السريعة.</string>
+
+    <!-- Default Map Settings -->
+    <string name="default_map_zoom_level">15</string>
+
+    <!-- Error Messages -->
+    <string name="generic_error">حدث خطأ غير متوقع. يرجى المحاولة لاحقًا.</string>
+
+    <!-- Additional Strings -->
+    <string name="fare_calculation_error">حدث خطأ أثناء حساب الأجرة. يرجى الاتصال بالدعم.</string>
+    <string name="trip_route_draw_error">غير قادر على رسم مسار الرحلة على الخريطة.</string>
+    <string name="notification_permission_prompt">قم بتمكين الإشعارات لتلقي تحديثات الرحلة وملخصاتها.</string>
+    <string name="profile_image_edite">صورة الملف الشخصي</string>
+    <string name="change_image_edtprofil">تغيير الصورة</string>
+    <string name="full_name_edtprofile">الاسم الكامل</string>
+    <string name="email_edtprofile">البريد الإلكتروني</string>
+    <string name="phone_number_edtprofile">رقم الهاتف</string>
+    <string name="new_password_edtprofile">كلمة المرور الجديدة</string>
+    <string name="update_profile_edtprofile">تحديث الملف الشخصي</string>
+    <string name="cancel_edtprofile">إلغاء</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="submit">إرسال</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="forgot_password_qs">هل نسيت كلمة المرور؟</string>
+    <string name="login_with_google">تسجيل الدخول باستخدام جوجل</string>
+    <string name="don_t_have_an_account">لا تمتلك حسابًا؟</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="trip_details">تفاصيل الرحلة</string>
+    <string name="distance_0_0_km">المسافة: 0.0 كم</string>
+    <string name="time_0_min">الوقت: 0 دقيقة</string>
+    <string name="fare_0_0_dh">الأجرة: 0.0 درهم</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="user_example_com">user@example.com</string>
+    <string name="_1_234_567_890">+1 234 567 890</string>
+    <string name="john_doe">جون دو</string>
+    <string name="driver_example_com">driver@example.com</string>
+    <string name="_123_456_7890">+123 456 7890</string>
+    <string name="license_d123456789">الرخصة: D123456789</string>
+    <string name="sign_up">تسجيل حساب جديد</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="vehicle_type">نوع السيارة</string>
+    <string name="license_number">رقم الرخصة</string>
+    <string name="upload_photo">رفع صورة</string>
+    <string name="fare_25_50">الأجرة: $25.50</string>
+    <string name="start_time_01_01_2023_10_00">وقت البدء: 01/01/2023 10:00</string>
+    <string name="end_time_01_01_2023_10_30">وقت الانتهاء: 01/01/2023 10:30</string>
+    <string name="historique">السجل</string>
+    <string name="map">الخريطة</string>
+    <string name="profil">الملف الشخصي</string>
+    <string name="re_authentication_failed_please_try_again">فشل إعادة المصادقة. يرجى المحاولة مرة أخرى.</string>
+    <string name="image_upload_failed">فشل تحميل الصورة: %1$s</string>
+    <string name="unknown_error">خطأ غير معروف</string>
+    <string name="password_updated_successfully">تم تحديث كلمة المرور بنجاح</string>
+    <string name="error_updating_password">خطأ أثناء تحديث كلمة المرور: %1$s</string>
+    <string name="invalid_email_format">تنسيق البريد الإلكتروني غير صالح</string>
+    <string name="password_cannot_be_empty">لا يمكن أن تكون كلمة المرور فارغة</string>
+    <string name="password_must_be_at_least_8_characters">يجب أن تكون كلمة المرور مكونة من 8 أحرف على الأقل</string>
+    <string name="user_not_found">المستخدم غير موجود</string>
+    <string name="invalid_credentials">بيانات الاعتماد غير صحيحة</string>
+    <string name="login_failed_try_again">فشل تسجيل الدخول. حاول مرة أخرى.</string>
+    <string name="google_sign_in_failed">فشل تسجيل الدخول عبر جوجل</string>
+    <string name="unknown">غير معروف</string>
+    <string name="driver_data_not_found">بيانات السائق غير موجودة!</string>
+    <string name="driver_data_not_found_for_uid">لم يتم العثور على بيانات السائق للـ UID: %1$s</string>
+    <string name="firestore">Firestore</string>
+    <string name="error_fetching_driver_data">خطأ في جلب بيانات السائق</string>
+    <string name="firestoreerrorcode">رمز خطأ Firestore</string>
+    <string name="firestoreerror">خطأ Firestore</string>
+    <string name="invalid_trip_data_please_try_again">بيانات الرحلة غير صالحة. يرجى المحاولة مرة أخرى.</string>
+    <string name="account_created_successfully">تم إنشاء الحساب بنجاح</string>
+    <string name="error">خطأ: %1$s</string>
+    <string name="this_email_is_already_registered">هذا البريد الإلكتروني مسجل بالفعل</string>
+    <string name="sign_up_failed">فشل التسجيل: %1$s</string>
+    <string name="passwords_do_not_match">كلمات المرور غير متطابقة</string>
+    <string name="please_confirm_your_password">يرجى تأكيد كلمة المرور الخاصة بك</string>
+    <string name="password_is_required">كلمة المرور مطلوبة</string>
+    <string name="phone_number_must_be_10_digits">يجب أن يتكون رقم الهاتف من 10 أرقام</string>
+    <string name="phone_number_is_required">رقم الهاتف مطلوب</string>
+    <string name="email_is_required">البريد الإلكتروني مطلوب</string>
+    <string name="name_is_required">الاسم مطلوب</string>
+    <string name="please_enter_your_email">يرجى إدخال بريدك الإلكتروني</string>
+    <string name="please_enter_your_password">يرجى إدخال كلمة مرورك</string>
+    <string name="login_successful">تم تسجيل الدخول بنجاح</string>
+    <string name="login_failed">فشل تسجيل الدخول: %1$s</string>
+    <string name="logged_out_successfully">تم تسجيل الخروج بنجاح</string>
+    <string name="all_fields_are_required">جميع الحقول مطلوبة!</string>
+    <string name="password_must_be_at_least_6_characters_long">يجب أن تتكون كلمة المرور من 6 أحرف على الأقل</string>
+    <string name="driver_sign_up_successful">تم التسجيل كسائق بنجاح!</string>
+    <string name="error_saving_driver_data">خطأ في حفظ بيانات السائق: %1$s</string>
+</resources>

@@ -5,7 +5,6 @@
     android:id="@+id/my_nav"
     app:startDestination="@id/onBoarding">
 
-    <!-- Onboarding Fragment -->
     <fragment
         android:id="@+id/onBoarding"
         android:name="com.dabataxi.Onboarding.OnBoarding"
@@ -18,7 +17,6 @@
             app:popUpToInclusive="true" />
     </fragment>
 
-    <!-- Home Fragment (after Onboarding) -->
     <fragment
         android:id="@+id/home2"
         android:name="com.dabataxi.Auth.HomeLogin"
@@ -37,7 +35,6 @@
             app:popUpToInclusive="false" />
     </fragment>
 
-    <!-- Driver Login Home -->
     <fragment
         android:id="@+id/loginHomeDVR"
         android:name="com.dabataxi.Auth.Driver.LoginHomeDrv"
@@ -54,7 +51,6 @@
             app:popUpToInclusive="true" />
     </fragment>
 
-    <!-- Customer Login Home -->
     <fragment
         android:id="@+id/loginHomeCST"
         android:name="com.dabataxi.Auth.Customer.LoginHomeCST"
@@ -75,7 +71,6 @@
             app:popUpTo="@id/loginHomeCST" />
     </fragment>
 
-    <!-- Forgot Password Fragment -->
     <fragment
         android:id="@+id/forgetPassCst"
         android:name="com.dabataxi.Auth.Customer.forgetPassCst"
@@ -88,7 +83,6 @@
             app:popUpToInclusive="true" />
     </fragment>
 
-    <!-- Customer Home -->
     <fragment
         android:id="@+id/homeAppCST"
         android:name="com.dabataxi.Auth.Customer.HomeAppCST"
@@ -101,7 +95,6 @@
             app:popUpToInclusive="true" />
     </fragment>
 
-    <!-- Customer Sign Up -->
     <fragment
         android:id="@+id/signUpCst"
         android:name="com.dabataxi.Auth.Customer.SignUpCst"
@@ -118,7 +111,6 @@
             app:popUpToInclusive="true" />
     </fragment>
 
-    <!-- Customer Profile -->
     <fragment
         android:id="@+id/profile"
         android:name="com.dabataxi.Auth.Customer.Profile"
@@ -134,7 +126,6 @@
             app:popUpToInclusive="true" />
     </fragment>
 
-    <!-- Edit Profile Fragment -->
     <fragment
         android:id="@+id/editProfile"
         android:name="com.dabataxi.Auth.Customer.EditProfile"
@@ -145,7 +136,6 @@
             app:destination="@id/profile" />
     </fragment>
 
-    <!-- Driver Sign Up -->
     <fragment
         android:id="@+id/signUpDrv"
         android:name="com.dabataxi.Auth.Driver.SignUpDrv"
@@ -158,7 +148,6 @@
             app:popUpToInclusive="true" />
     </fragment>
 
-    <!-- Driver Profile -->
     <fragment
         android:id="@+id/profileDrv"
         android:name="com.dabataxi.Auth.Driver.ProfileDrv"

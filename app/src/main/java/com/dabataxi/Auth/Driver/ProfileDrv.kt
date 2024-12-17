@@ -56,7 +56,7 @@ class ProfileDrv : Fragment(R.layout.fragment_profile_drv) {
 
     private fun logoutUser() {
         auth.signOut()
-        Toast.makeText(context, "Logged out successfully", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, getString(R.string.logged_out_successfully), Toast.LENGTH_SHORT).show()
        findNavController().navigate(R.id.home2)
     }
 

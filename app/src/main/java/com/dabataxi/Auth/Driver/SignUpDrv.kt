@@ -71,17 +71,19 @@ class SignUpDrv : Fragment(R.layout.fragment_sign_up_drv) {
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(email) || TextUtils.isEmpty(phone) ||
             TextUtils.isEmpty(password) || TextUtils.isEmpty(confirmPassword) ||
             TextUtils.isEmpty(vehicleType) || TextUtils.isEmpty(licenseNumber) || gender.isEmpty()) {
-            Toast.makeText(requireContext(), "All fields are required!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),
+                getString(R.string.all_fields_are_required), Toast.LENGTH_SHORT).show()
             return
         }
 
         if (password != confirmPassword) {
-            Toast.makeText(requireContext(), "Passwords do not match!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), getString(R.string.passwords_do_not_match), Toast.LENGTH_SHORT).show()
             return
         }
 
         if (password.length < 6) {
-            Toast.makeText(requireContext(), "Password must be at least 6 characters long", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(),
+                getString(R.string.password_must_be_at_least_6_characters_long), Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -109,10 +111,15 @@ class SignUpDrv : Fragment(R.layout.fragment_sign_up_drv) {
                     database.child("drivers").child(driver.id).setValue(driver)
                         .addOnCompleteListener { dbTask ->
                             if (dbTask.isSuccessful) {
-                                Toast.makeText(requireContext(), "Driver Sign-up Successful!", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(requireContext(),
+                                    getString(R.string.driver_sign_up_successful), Toast.LENGTH_SHORT).show()
                                 findNavController().navigate(R.id.profileDrv)
                             } else {
-                                Toast.makeText(requireContext(), "Error saving driver data: ${dbTask.exception?.message}", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(requireContext(),
+                                    getString(
+                                        R.string.error_saving_driver_data,
+                                        dbTask.exception?.message
+                                    ), Toast.LENGTH_SHORT).show()
                             }
                         }
 
