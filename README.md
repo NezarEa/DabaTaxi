@@ -29,7 +29,7 @@ To get started with the project, follow these steps:
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/DabaTaxi.git](https://github.com/NezarEa/DabaTaxi.git)
+git clone https://github.com/NezarEa/DabaTaxi.git
 cd DabaTaxi
 ```
 
@@ -50,7 +50,7 @@ If you want to test the backend functionality, follow these steps:
 1. Clone the backend repository:
    
    ```bash
-   git clone [https://github.com/your-username/DabaTaxi.git](https://github.com/NezarEa/DabaTaxi.git)
+   git clone https://github.com/NezarEa/DabaTaxi.git
    cd DabaTaxi
    ```
 
@@ -102,7 +102,7 @@ We welcome contributions! To contribute, please fork the repository and submit a
 2. Clone your fork:
 
    ```bash
-   git clone [https://github.com/your-username/DabaTaxi.git](https://github.com/NezarEa/DabaTaxi.git)
+   git clone https://github.com/NezarEa/DabaTaxi.git
    ```
 
 3. Create a new branch for your changes:
