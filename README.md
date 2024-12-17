@@ -83,6 +83,7 @@ Here are some screenshots of the app:
 
 ---
 
+
 ## Future Enhancements
 
 - **Payment Integration**: Integrate a payment gateway to process transactions after the ride ends.
