@@ -56,7 +56,6 @@ class MainActivity : AppCompatActivity() {
             slideUp.start()
         }
 
-        // After splash screen, navigate to the appropriate screen
         navigateToAppropriateScreen()
     }
 

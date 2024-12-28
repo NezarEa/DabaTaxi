@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.dabataxi.Auth.Customer
 
 import android.Manifest

@@ -14,6 +14,7 @@
         android:layout_marginTop="50dp"
         app:lottie_rawRes="@raw/first"
         app:lottie_autoPlay="true"
+        android:background="@color/white"
         app:lottie_loop="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
